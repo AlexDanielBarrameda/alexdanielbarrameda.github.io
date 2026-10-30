@@ -1,13 +1,7 @@
 import { useEffect, useState } from "react";
 import ProfileFrame from "./ProfileFrame";
-import { GitHubIcon, LinkedInIcon, MailIcon } from "./icons";
+import { socialLinks } from "./icons";
 import { heroTitles, navItems } from "../data";
-
-const socials = [
-  { label: "LinkedIn", href: "https://linkedin.com", Icon: LinkedInIcon, external: true },
-  { label: "GitHub", href: "https://github.com", Icon: GitHubIcon, external: true },
-  { label: "Email", href: "mailto:hello@example.com", Icon: MailIcon, external: false },
-];
 
 export default function Hero() {
   const [heroTitleIndex, setHeroTitleIndex] = useState(0);
@@ -50,7 +44,7 @@ export default function Hero() {
       </div>
 
       <ul className="socials" aria-label="Social links">
-        {socials.map(({ label, href, Icon, external }) => (
+        {socialLinks.map(({ label, href, Icon, external }) => (
           <li key={label}>
             <a
               className="social-link"

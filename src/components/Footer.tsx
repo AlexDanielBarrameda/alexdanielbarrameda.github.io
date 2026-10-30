@@ -1,13 +1,4 @@
-import Monogram from "./Monogram";
-
+/** Closing rule and breathing room at the page end; intentionally has no content. */
 export default function Footer() {
-  return (
-    <footer className="footer">
-      <div className="footer__inner">
-        <p className="footer__meta">© 2026 Lorem ipsum</p>
-        <Monogram />
-        <p className="footer__meta footer__meta--accent">Lorem ipsum dolor</p>
-      </div>
-    </footer>
-  );
+  return <div className="footer" aria-hidden="true" />;
 }

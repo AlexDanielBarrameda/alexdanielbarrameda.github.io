@@ -11,6 +11,14 @@ export const heroTitles: HeroTitle[] = [{ lead: "Hi! I'm ", accent: "Dan" }, { l
 export const profileImageUrl: string | null = null;
 export const profileImageAlt = "Portrait of Dan";
 
+export const contactEmail = "danielbarrameda2021@gmail.com";
+// Replace with your profile URLs; the hero icons and the Contact list both read these.
+export const githubUrl = "https://github.com/AlexDanielBarrameda";
+export const linkedinUrl = "https://www.linkedin.com/in/alex-daniel-barrameda/";
+
+/** "https://www.github.com/user/" -> "github.com/user" */
+export const displayUrl = (url: string) => url.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
+
 export interface NavItem {
   label: string;
   href: `#${string}`;

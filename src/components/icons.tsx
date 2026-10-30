@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import { githubUrl, linkedinUrl } from "../data";
 
 const base: SVGProps<SVGSVGElement> = {
   width: 16,
@@ -31,3 +32,17 @@ export const MailIcon = () => (
     <path d="m3.5 6 8.5 7 8.5-7" />
   </svg>
 );
+
+export interface SocialLink {
+  label: string;
+  href: string;
+  Icon: () => JSX.Element;
+  external: boolean;
+}
+
+export const socialLinks: SocialLink[] = [
+  { label: "LinkedIn", href: linkedinUrl, Icon: LinkedInIcon, external: true },
+  { label: "GitHub", href: githubUrl, Icon: GitHubIcon, external: true },
+  // Jumps to the on-page Contact section (smooth via html scroll-behavior) instead of opening a mail client.
+  { label: "Go to contact section", href: "#contact", Icon: MailIcon, external: false },
+];
