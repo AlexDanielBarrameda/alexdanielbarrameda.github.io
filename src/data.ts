@@ -40,7 +40,7 @@ export const navItems: NavItem[] = [
 
 export const aboutParagraphs: string[] = [
   "Hey, I’m an aspiring Software and Machine Learning Engineer currently based in the Philippines. I’m a 4th year Computer Science student at the University of Rizal System - Morong.",
-  "I focus on the space where software engineering meets applied AI—building end-to-end projects across computer vision, predictive modeling, and full-stack web apps. My interest in ML started with a simple idea: pointing a camera at something and teaching a computer to understand it. Since then, my work has focused on applied machine learning and full-stack development, automating manual processes inside apps and turning complex data into tools that help people improve their performance. I even let my hobbies bleed into my code, like breaking down competitive gameplay mechanics with data instead of relying on guesswork.",
+  "I focus on the space where software engineering meets applied AI, building end-to-end projects across computer vision, predictive modeling, and full-stack web apps. My interest in ML started with a simple idea: pointing a camera at something and teaching a computer to understand it. Since then, my work has focused on applied machine learning and full-stack development, automating manual processes inside apps and turning complex data into tools that help people improve their performance. I even let my hobbies bleed into my code, like breaking down competitive gameplay mechanics with data instead of relying on guesswork.",
 ];
 
 export interface SkillGroup {
