@@ -1,18 +1,19 @@
 :root {
-  /* Color */
-  --bg-primary: #231f20;
-  --bg-surface-1: #2a2526;
-  --bg-surface-2: #312b2c;
-  --gold-dark: #8e793e;
-  --gold-light: #ad974f;
-  --text-light: #eaeaea;
+  /* Color: "Champions" — onyx, metallic gold, ember */
+  --bg-void: #060608;
+  --bg-card: #0d0d11;
+  --bg-surface-2: #14141a; /* image/visual placeholders, one step above cards */
+  --gold-light: #ffe082; /* highlights, hover/focus */
+  --gold-mid: #d4af37; /* primary gold: headings, accents, small labels (9.6:1 on --bg-void) */
+  --gold-dark: #8c6a12; /* burnished: borders and decorative marks only (4:1, not for small text) */
+  --ember-red: #c82a2a; /* glow accent only, never text */
+  --text-platinum: #fafafa;
 
-  /* #8E793E is 3.8:1 on --bg-primary, below AA for small text.
-     Meaningful small labels use this lifted step (4.8:1); decorative ones keep --gold-dark. */
-  --gold-dark-text: #a08a4a;
-  --text-body: rgb(234 234 234 / 0.72);
-  --gold-fill: rgb(173 151 79 / 0.08);
-  --line-faint: rgb(142 121 62 / 0.35);
+  --text-body: rgb(250 250 250 / 0.7);
+  --gold-fill: rgb(212 175 55 / 0.08);
+  --line-faint: rgb(212 175 55 / 0.25);
+  --gold-metal: linear-gradient(135deg, #ffe082, #d4af37, #8c6a12);
+  --ember-glow: rgb(200 42 42 / 0.45);
 
   /* Type */
   --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
@@ -27,6 +28,7 @@
   --fs-project-title: 1.75rem;
   --fs-section: clamp(2.75rem, 5vw, 4rem);
   --fs-hero: clamp(72px, 8vw, 118px);
+  --fs-role: clamp(0.6875rem, 0.62rem + 0.25vw, 0.8125rem);
 
   --tracking-wide: 0.3em;
   --tracking-mid: 0.2em;
@@ -35,6 +37,7 @@
   --container: 1180px;
   --gutter: clamp(20px, 4.5vw, 84px);
   --section-pad: clamp(120px, 14vw, 180px);
+  --tap: 44px; /* minimum touch target */
 
   /* Motion */
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);

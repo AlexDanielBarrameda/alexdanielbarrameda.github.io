@@ -3,6 +3,8 @@ import ProfileFrame from "./ProfileFrame";
 import { socialLinks } from "./icons";
 import { heroTitles, navItems } from "../data";
 
+const TRIM_CORNERS = ["tl", "tr", "bl", "br"] as const;
+
 export default function Hero() {
   const [heroTitleIndex, setHeroTitleIndex] = useState(0);
   const title = heroTitles[heroTitleIndex];
@@ -16,16 +18,20 @@ export default function Hero() {
 
   return (
     <header id="top" className="hero">
+      {TRIM_CORNERS.map((corner) => (
+        <span key={corner} className={`hero__trim hero__trim--${corner}`} aria-hidden="true" />
+      ))}
+
       <div className="hero__content">
         <ProfileFrame />
-        <p className="hero__role">Software Developer</p>
+        <p className="hero__role">Aspiring Machine Learning Engineer</p>
 
         {/* Stable accessible name; the rotating text is visual only so screen readers aren't re-announced every 3s. */}
         <h1 className="hero__title">
           <span className="visually-hidden">Hi! I'm Dan</span>
           <span key={heroTitleIndex} className="hero__title-text" aria-hidden="true">
             <span className="hero__title-lead">{title.lead}</span>
-            {title.accent}
+            {title.accent && <span className="hero__title-accent">{title.accent}</span>}
           </span>
         </h1>
         <span className="accent-line accent-line--center accent-line--hero" aria-hidden="true" />
