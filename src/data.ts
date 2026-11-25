@@ -59,6 +59,7 @@ export const skillGroups: SkillGroup[] = [
       "MediaPipe",
       "Pandas",
       "NumPy",
+      "Matplotlib",
       "Computer Vision",
       "Time-Series Analysis",
       "LLM Integration",
@@ -66,7 +67,19 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     title: "Software & Web Development",
-    items: ["TypeScript", "JavaScript", "React", "Vite", "Flutter", "Dart", "PHP", "Laravel", "Java", "HTML/CSS"],
+    items: [
+      "TypeScript", 
+      "JavaScript",
+      "PHP", 
+      "Laravel", 
+      "HTML/CSS",
+      "React", 
+      "Vite", 
+      "Flutter", 
+      "Dart",  
+      "Java", 
+      "Visual Basic .NET", 
+      ],
   },
 ];
 
